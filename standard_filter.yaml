@@ -16,7 +16,7 @@
    - name: Adding mogt banner
      ios_config:
        lines:
-         - banner motd «Daniil Kovalenko RI-400022»
+         - banner motd «Nikita Siverukhin RI-400021»
                   
    - name: Apply new ACL to VTY
      ios_config:
