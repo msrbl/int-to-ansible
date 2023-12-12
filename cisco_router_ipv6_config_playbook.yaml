@@ -34,4 +34,4 @@
    - name: SAVE OUTPUT ./ios_configurations/
      copy: 
        content: "{{ output.stdout[0] }}"
-       dest: "ios_configurations/IPv6_output_{{ inventory_hostname }}.txt"`
+       dest: "ios_configurations/IPv6_output_{{ inventory_hostname }}.txt"
