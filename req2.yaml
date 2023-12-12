@@ -16,13 +16,14 @@
                   
    - name: Apply new ACL to R1 Eth0/0 out
      ios_config:
-       parents: int e0/0.10
+       parents: interface e0/0.10
        lines:
          - ip access-group REQ2 out
 
    - name: Check result
      ios_command:
-       commands: sh ip access-lists
+       commands:
+         - show ip access-lists
      register: result
      tags: show
 
