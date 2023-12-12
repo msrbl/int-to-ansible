@@ -14,7 +14,7 @@
          - 30 deny icmp any any echo
          - 40 permit ip any any
                   
-   - name: Apply new ACL to R1 Eth0/0 out
+   - name: Apply new ACL to R1
      ios_config:
        parents: interface e0/0.10
        lines:
